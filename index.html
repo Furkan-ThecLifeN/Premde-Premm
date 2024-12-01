@@ -165,7 +165,8 @@
                     <div class="rectangle">
                         <img src="./images/jet.jpg" alt="Fotoğraf 5">
                         <h3>DaughterOfFireee</h3>
-                        <p>Sadakat olarak dünyanın en sadık insanı olup pre'ni/Duo'nu bile satmayan bir yapın olması.</p>
+                        <p>Sadakat olarak dünyanın en sadık insanı olup pre'ni/Duo'nu bile satmayan bir yapın olması.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -177,6 +178,115 @@
             <img src="./images/fade.jpg" alt="Fotoğraf 1" width="150px" height="250px">
         </div> -->
 
+
+        <!-- Animasyon Çiçek Sectionu -->
+
+        <!-- CSS Kodu -->
+
+        <style>
+            .animation-btn {
+                flex-direction: column;
+                gap: 20px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./images/hayaletler.jpg') no-repeat center center/cover;
+                border: 5px solid #00ff95;
+            }
+
+            .animation-button {
+                padding: 15px 30px;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: #000000;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                border: 3px solid #ffffff;
+            }
+
+            .animation-button:hover {
+                background-color: #00ff15;
+            }
+
+            .animation-text {
+                padding: 15px;
+                color: rgba(0, 0, 0, 0.871);
+                background-color: rgba(255, 255, 255, 0.693);
+                border-radius: 15px;
+                border: 3px solid #050505ca;
+            }
+
+
+            .animation-btn-two {
+                flex-direction: column;
+                gap: 20px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./images/backgorund.jpg') no-repeat center center/cover;
+
+
+            }
+
+            .animation-button-two {
+                padding: 15px 30px;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: #000000;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                border: 3px solid #ffffff;
+            }
+
+            .animation-button-two:hover {
+                background-color: #01ff1a;
+            }
+
+            /* .button-two {
+                padding: 30px;
+                color: aliceblue;
+                background-color: #00ff48f0;
+                font-size: larger;
+                border-radius: 30px;
+                text-decoration: none;
+
+            } */
+        </style>
+
+
+        <!-- CSS Kodu -->
+
+
+        <section class="animation-btn">
+            <div class="animation-text">
+                <p>Bugün Prensesler Günü Değil Biliyorum ama Sende Zaten Bir Günün Prensesi Değil Her Günün Prensesisin.
+                    Prenses Günlerin Kutlu Olsun ...</p>
+            </div>
+            <button class="animation-button" id="redirect-button-one">Yalnız Prensesler Bu Kutuya Tıklasın Yani Sen 💚</button>
+            <button class="animation-button-two" id="redirect-button-two">İyiki Varsın Premm 💚</button>
+        </section>
+
+        <script>
+            // İlk buton başka bir sayfaya yönlendirir
+            const buttonOne = document.getElementById('redirect-button-one');
+            buttonOne.addEventListener('click', () => {
+                window.location.href = './Animation/index.html';
+            });
+
+            // İkinci buton başka bir sayfaya yönlendirir
+            const buttonTwo = document.getElementById('redirect-button-two');
+            buttonTwo.addEventListener('click', () => {
+                window.location.href = './Animation/butterfly_2.html';
+            });
+        </script>
 
     </main>
 
