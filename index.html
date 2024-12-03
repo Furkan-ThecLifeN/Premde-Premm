@@ -259,6 +259,115 @@
                 text-decoration: none;
 
             } */
+
+            .animation-btn-three {
+                flex-direction: column;
+                gap: 20px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./images/backgorund.jpg') no-repeat center center/cover;
+
+
+            }
+
+            .animation-button-three {
+                padding: 15px 30px;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: #000000;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                border: 3px solid #ffffff;
+            }
+
+            .animation-button-three:hover {
+                background-color: #01ff1a;
+            }
+
+            .button-div {
+                display: flex;
+                gap: 15px;
+            }
+
+
+            /* button 4 */
+
+            .animation-btn-forth {
+                flex-direction: column;
+                gap: 20px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./images/backgorund.jpg') no-repeat center center/cover;
+
+
+            }
+
+            .animation-button-forth {
+                padding: 15px 30px;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: #000000;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                border: 3px solid #ffffff;
+            }
+
+            .animation-button-forth:hover {
+                background-color: #01ff1a;
+            }
+
+            /* 5. button */
+
+            .animation-btn-fifth {
+                flex-direction: column;
+                gap: 20px;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./images/backgorund.jpg') no-repeat center center/cover;
+
+
+            }
+
+            .animation-button-fifth {
+                padding: 15px 30px;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                background-color: #000000;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                border: 3px solid #ffffff;
+            }
+
+            .animation-button-fifth:hover {
+                background-color: #01ff1a;
+            }
+
+            .animation-text-two {
+                padding: 15px;
+                max-width: 1000px;
+                background-color: rgba(255, 255, 255, 0.841);
+                border-radius: 15px;
+            }
+
+            .animation-text-two p {
+                color: #000000;
+                font-weight: bold;
+            }
         </style>
 
 
@@ -270,8 +379,21 @@
                 <p>Bugün Prensesler Günü Değil Biliyorum ama Sende Zaten Bir Günün Prensesi Değil Her Günün Prensesisin.
                     Prenses Günlerin Kutlu Olsun ...</p>
             </div>
-            <button class="animation-button" id="redirect-button-one">Yalnız Prensesler Bu Kutuya Tıklasın Yani Sen 💚</button>
-            <button class="animation-button-two" id="redirect-button-two">İyiki Varsın Premm 💚</button>
+            <div class="button-div">
+                <button class="animation-button" id="redirect-button-one">Yalnız Prensesler Bu Kutuya Tıklasın Yani Sen
+                    💚</button>
+                <button class="animation-button-two" id="redirect-button-two">İyiki Varsın Premm 💚</button>
+                <button class="animation-button-three" id="redirect-button-three">Bunlar Mutlu Olman İçin 💚</button>
+                <button class="animation-button-forth" id="redirect-button-forth">Üzülme Sen 💚</button>
+                <button class="animation-button-fifth" id="redirect-button-fifth">Hep Mutlu Kal 💚</button>
+            </div>
+            <div class="animation-text-two">
+                <p>Bazen şans bizden yana olmaz, ama bu her şeyin sonu değil. Başarı, sadece bugüne sığmaz; içindeki
+                    başarma hissi seni zaten rakiplerinden ayırıyor. Sen ne istersen yapabilecek güçtesin, o yüzden
+                    kendine güven. Beşiktaş bile zor günlerden geçiyor, ama pes etmiyor. Biz de öyle! Daha iyisi için
+                    çalışacağız, sakın üzülme. 💜
+                </p>
+            </div>
         </section>
 
         <script>
@@ -286,7 +408,27 @@
             buttonTwo.addEventListener('click', () => {
                 window.location.href = './Animation/butterfly_2.html';
             });
+
+            // Üçüncü buton başka bir sayfaya yönlendirir
+            const buttonThree = document.getElementById('redirect-button-three');
+            buttonThree.addEventListener('click', () => {
+                window.location.href = './Animation/heart-animation/flower_w_heart.html';
+            });
+
+            // Dördüncü buton başka bir sayfaya yönlendirir
+            const buttonForth = document.getElementById('redirect-button-forth');
+            buttonForth.addEventListener('click', () => {
+                window.location.href = './Animation/YesNo/do_you_love_me.html';
+            });
+
+            // Beşinci buton başka bir sayfaya yönlendirir
+            const buttonFifth = document.getElementById('redirect-button-fifth');
+            buttonFifth.addEventListener('click', () => {
+                window.location.href = './Animation/Mektup/love letter.html';
+            });
         </script>
+
+
 
     </main>
 
