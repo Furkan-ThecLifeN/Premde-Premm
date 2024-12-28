@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden; /* Kaydırma çubuğunun çıkmasını engeller */
+  }
+
+canvas {
+	display: block;
+}
+
+.block-audio {
+	display: none;
+}

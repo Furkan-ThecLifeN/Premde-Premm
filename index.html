@@ -7,13 +7,32 @@
     <title>Premde Prem</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
+        <div class="nav">
+            <a href="#" class="profile-photo">
+                <img src="./images/profile.jpg" alt="Logo">
+            </a>
+            <nav class="navbar">
+                <a href="#section1">Home</a>
+                <a href="#section2">Hakkında</a>
+                <a href="#section3">Bela</a>
+                <a href="#section4">Prenses</a>
+                <a href="#section5">Söz Veriyorum</a>
+                <a href="#play">Eğlence</a>
+                <a href="https://www.instagram.com/aysah_nk/" class="icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </div>
         <section id="section1" class="section1">
             <div class="container">
-                <h1>Selamın Hello Seninle Tanışmamız Üzerine Tam Bir Ay Geçti İyiki Varsın Prem</h1>
+                <h1>Selamın Hello Seninle Tanışmamız Üzerine Tam İki Ay Geçti İyiki Varsın Prem</h1>
             </div>
             <div class="scroll-box">
                 <p><a href="#section2">Tıkla Bakimsuuu</a></p>
@@ -36,7 +55,7 @@
                         </div>
                         <div class="right">
                             <div class="image-box">
-                                <img src="./images/v_fade.jpg" alt="Fotoğraf 1">
+                                <img src="./images/ryna5.jpg" alt="Fotoğraf 1">
                             </div>
                         </div>
                     </div>
@@ -59,7 +78,7 @@
                         </div>
                         <div class="right">
                             <div class="image-box">
-                                <img src="./images/fade_v3.jpg" alt="Fotoğraf 1">
+                                <img src="./images/ryna2.jpg" alt="Fotoğraf 1">
                             </div>
                         </div>
                     </div>
@@ -82,7 +101,7 @@
                         </div>
                         <div class="right">
                             <div class="image-box">
-                                <img src="./images/fade_v8.jpg" alt="Fotoğraf 1">
+                                <img src="./images/ryna3.jpg" alt="Fotoğraf 1">
                             </div>
                         </div>
                     </div>
@@ -103,7 +122,7 @@
                         </div>
                         <div class="right">
                             <div class="image-box">
-                                <img src="./images/fade_v4.jpg" alt="Fotoğraf 1">
+                                <img src="./images/ryna4.jpg" alt="Fotoğraf 1">
                             </div>
                         </div>
                     </div>
@@ -126,7 +145,7 @@
                         </div>
                         <div class="right">
                             <div class="image-box">
-                                <img src="./images/fade_v5.png" alt="Fotoğraf 1">
+                                <img src="./images/ryna1.jpg" alt="Fotoğraf 1">
                             </div>
                         </div>
                     </div>
@@ -136,14 +155,14 @@
 
         <!-- Burası 3.Section Kısmı  -->
 
-        <section id="section3" class="section3">
+        <section id="section3" class="section3" id="bela">
             <div class="main-box">
                 <div class="title-box">
                     <h2>BELA</h2>
                 </div>
                 <div class="rectangles">
                     <div class="rectangle">
-                        <img src="./images/fade.jpg" alt="Fotoğraf 1" width="200px" height="300px">
+                        <img src="./images/Ryna6.jpg" alt="Fotoğraf 1" width="200px" height="300px">
                         <h3>DaughterOfFireee</h3>
                         <p>Güvenilirlik olarak Dünyanın en güvenilebilecek insanı olman. </p>
                     </div>
@@ -158,7 +177,7 @@
                         <p>Zor zamanlarda bile bana doğruyu söyleyerek çok dürüst bir yapın olması.</p>
                     </div>
                     <div class="rectangle">
-                        <img src="./images/astra.jpg" alt="Fotoğraf 4">
+                        <img src="./images/fade.jpg" alt="Fotoğraf 4">
                         <h3>DaughterOfFireee</h3>
                         <p>Empati yönün ile sevdiklerinin yanında olup destekleyici bir insan olman.</p>
                     </div>
@@ -192,7 +211,9 @@
                 justify-content: center;
                 align-items: center;
                 background: url('./images/hayaletler.jpg') no-repeat center center/cover;
-                border: 5px solid #00ff95;
+                border: 2px solid #f1f1f1;
+                margin-top: 100px;
+                margin-bottom: 100px;
             }
 
             .animation-button {
@@ -374,7 +395,7 @@
         <!-- CSS Kodu -->
 
 
-        <section class="animation-btn">
+        <section class="animation-btn" id="section4">
             <div class="animation-text">
                 <p>Bugün Prensesler Günü Değil Biliyorum ama Sende Zaten Bir Günün Prensesi Değil Her Günün Prensesisin.
                     Prenses Günlerin Kutlu Olsun ...</p>
@@ -393,6 +414,147 @@
                     kendine güven. Beşiktaş bile zor günlerden geçiyor, ama pes etmiyor. Biz de öyle! Daha iyisi için
                     çalışacağız, sakın üzülme. 💜
                 </p>
+            </div>
+        </section>
+
+        <style>
+            section {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .box {
+                /* Eşit alan paylaşımlı */
+                flex: 1;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                height: 400px;
+            }
+
+            .box img {
+                width: 100%;
+                max-width: 150px;
+                /* Görüntü boyutunu kontrol eder */
+                height: auto;
+                border-radius: 50%;
+                /* Fotoğrafın köşelerini yuvarlar */
+                margin-bottom: 15px;
+            }
+
+            .box p {
+                font-size: 16px;
+                color: #555;
+                margin-bottom: 20px;
+            }
+
+            .box button {
+                background-color: #007bff;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .box button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+
+
+        <section>
+            <!-- İlk kutucuk -->
+            <div class="box" id="section5">
+                <img src="./images/keddy2.jpg" alt="Fotoğraf">
+                <p>Canım Benim, sana söz veriyorum; hayat bize ne getirirse getirsin, iyi ya da kötü her anında
+                    yanında olacağım. Seni desteklemek, birlikte gülebilmek ve zorluklara beraber göğüs germek için
+                    buradayım. Seninle olduğum için çok şanslıyım ve bu dostluk benim için her zaman çok değerli olacak.
+                </p>
+                <a href="./Animation/fish code/fish.html" target="_blank" class="btn">Söz Veriyorum 🤞</a>
+            </div>
+
+            <!-- İkinci kutucuk -->
+            <div class="box">
+                <img src="./images/güçlüsünjpg.jpg" alt="Fotoğraf">
+                <p>
+                    Canım Benim, biliyorum YKS süreci seni çok yordu ama senin ne kadar güçlü olduğunu da biliyorum.
+                    Bu yorgunluk geçecek, emeklerin karşılık bulacak. Pes etmek yok, çünkü sen gerçekten başaracaksın.
+                    Ben her zaman senin yanındayım, bunu sakın unutma!
+                </p>
+                <a href="./Animation/power-sun/13/scenery-scroll-animation.html" target="_blank" class="btn">Üzülme
+                    🥺</a>
+            </div>
+        </section>
+
+        <section id="noel" class="noel">
+            <div class="noel-box">
+                <div class="noel-div">
+                    <h2>Mutlu Noeller! 🎄✨</h2>
+                    <p>Bu özel günde, hayatımda olduğun için ne kadar şanslı olduğumu bir kez daha fark ediyorum. Sen
+                        sadece bir arkadaş değil, aynı zamanda en derin sırlarımı paylaşabildiğim, en güzel anılarımı
+                        biriktirdiğim, iyi günde kötü günde hep yanımda hissettiğim bir dostsun.
+
+                        Bu yıl beraber güldük, belki bazen hüzünlendik ama her anımız anlam doluydu. Her zaman yanımda
+                        oldun, beni olduğum gibi kabul ettin. Bunun için ne kadar teşekkür etsem az.
+
+                        Nice güzel yıllarımıza, paylaştığımız kahkahalara ve gelecekte bizi bekleyen unutulmaz anılara!
+                        Umarım 2025 senin için sağlık, mutluluk ve başarı dolu olur. Unutma, ben her zaman yanındayım.
+
+                        İyiki varsın, iyi ki benim dostumsun. Seni seviyorum. 🤍
+                    </p>
+                    <div class="buttons">
+                        <a href="./Animation/12/fireworks v2.0.html" target="_blank" class="btn">Neşeli</a>
+                        <a href="./Animation/17/xmas-tree.html" target="_blank" class="btn">Mutlu</a>
+                        <a href="./Animation/yılbasıagacı/22/xmas-animation.html" target="_blank"
+                            class="btn">Noeller</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="play" class="play">
+            <div class="play-box">
+                <div class="play-div">
+                    <h2>Canın Sıkıldığında Oynaman İçin Sana Özel Birşeyler Yaptım Bak Bakalım Beğenecen mi? 🎶✨</h2>
+                    <p>Bazen hayatın temposu insanı bunaltabilir ve biraz eğlence, biraz müzikle rahatlamak gerekebilir.
+                        O yüzden sana küçük bir sürpriz hazırladım! 🎵
+
+                        Canın sıkıldığında, arka planda sevdiğin müzikleri açıp, kendini rahat bırakabileceğin bir an
+                        yaratmanı istedim. Dans et, gül, kahkaha at ve hayatın tadını çıkar. Çünkü senin gülümsemen,
+                        dünyadaki en değerli şey. 😄
+
+                        Unutma, sıkıntılar geçer, ama güzel anılar ve eğlenceler her zaman kalır! Eğlencenin ve huzurun
+                        peşinden git, çünkü sen her anı hak ediyorsun.
+
+                        Nice güzel anılara, kahkahalara ve bolca müziğe! 💃🎶
+
+                        Hep yanındayım, her zaman dostun.
+                    </p>
+                    <div class="play-buttons">
+                        <a href="./Animation/19/Interactive-Jellyfish.html" target="_blank" class="btn">Sen Nere Ben
+                            Oraya</a>
+                        <a href="./Animation/Flappy-Bird-Game-main/index.html" target="_blank" class="btn">Yaparsın
+                            Sen</a>
+                        <a href="./Animation/whac-a-mole-master/index.html" target="_blank" class="btn">Bela</a>
+                        <a href="./Animation/gorillas-main/index.html" target="_blank" class="btn">Gel VS Atak</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="final">
+            <div class="final-chapter">
+                <a href="./final-chapter.html"  target="_blank" class="btn">Final Chapter</a>
             </div>
         </section>
 

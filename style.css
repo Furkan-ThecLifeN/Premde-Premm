@@ -10,11 +10,43 @@ body, html {
     height: 100%;
     font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* Dikey scrollbar genişliği */
+    height: 12px; /* Yatay scrollbar yüksekliği */
+}
+
+/* Scrollbar arka planı */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Arka plan rengi */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+}
+
+/* Scrollbarın hareketli kısmı */
+::-webkit-scrollbar-thumb {
+    background: #7d26cd; /* Scrollbar rengi */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+}
+
+/* Scrollbar üzerine gelindiğinde */
+::-webkit-scrollbar-thumb:hover {
+    background: #00bfff; /* Hover rengi */
 }
 
 body {
     overflow-x: hidden;
+    background: url('./images/ay.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
 }
+
+
 
 section {
     padding-top: 30px; /* İlk section'dan sonra biraz mesafe ekledim */
@@ -27,6 +59,69 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 5px 30px;
+    z-index: 1000;
+    top: 10px;
+    position: fixed; /* Div'i sabitler */
+    left: 50%; /* Sol kenardan yüzde 50 uzaklık */
+    transform: translateX(-50%); /* Div'i tam olarak ortalar */
+    width: 100%; /* Genişlik isteğe göre ayarlanabilir */
+    text-align: center; /* İçeriği yatayda ortalar */
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    padding-right: 150px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #7d26cd;
+}
+
+.navbar .icon {
+   color: #c60000;
+}
+
+.navbar .icon:hover {
+    color: #ff0000;
+ }
+
+ .navbar a i {
+    font-size: 24px;
+ }
+ 
+
+.profile-photo {
+    width: 80px; /* Fotoğrafın boyutunu ayarlayın */
+    height: 80px;
+    border-radius: 50%; /* Yuvarlak yapmak için */
+    overflow: hidden; /* Fotoğrafın dışa taşmasını engeller */
+    border: 1px solid #fff; /* Çerçeve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fotoğrafı çerçeveye sığdırır ve bozulmasını engeller */
 }
 
 .container {
@@ -54,17 +149,18 @@ section {
 /* SECTION 2 */
 .section2 {
     padding: 50px 20px;
-    background-color: rgba(21, 202, 21, 0.659);
+    /* background-color: #ff00ff; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
 }
 
 .frame {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 15px;
@@ -84,7 +180,6 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: 1px solid #6a0dad;
 }
 
 .item .left {
@@ -159,21 +254,24 @@ section {
 
 /* Yeni Section */
 .section3 {
+    background-image: url("./images/kelebek.jpg");
     padding: 20px;
-    background-color: #b308f16b;
+    background-color: #ff00ff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #f1f1f1;
+    margin-top: 100px;
 }
 
 .main-box {
     width: 100%;
-    max-width: 3200px;
-    background-color: rgba(21, 202, 21, 0.659); /* Açık mavi */
+    max-width: 1250px;
+    background-color: rgba(21, 202, 21, 0); /* Açık mavi */
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #b707ed; /* Açık mavi */
+    border: 2px solid #b707ed00; /* Açık mavi */
     /* justify-content: center; */
     text-align: center;
 }
@@ -183,7 +281,7 @@ section {
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: 2px solid #6a5acd;
+    border: 3px solid #fd00db;
     padding: 15px;
     display: inline-block; /* Dinamik boyut */
     min-width: 200px;
@@ -210,7 +308,7 @@ section {
 .rectangle {
     background-color: #ffffff;
     border-radius: 10px;
-    border: 2px solid #a710ccfd;
+    border: 2px solid #fffffffd;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
@@ -242,6 +340,134 @@ section {
     color: #666;
     padding: 0 5px;
 }
+
+
+.noel {
+    background-image: url('./images/noel2.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi kapsayacak şekilde ölçeklendir */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
+    height: 100vh; /* Tüm ekran yüksekliğinde görünüm */
+    display: flex; /* İçeriği ortalamak için */
+    flex-direction: column; /* İçerikleri dikeyde sıralamak için */
+    justify-content: center; /* İçeriği dikeyde ortala */
+    align-items: center; /* İçeriği yatayda ortala */
+    color: white; /* Metin rengini beyaz yap */
+    text-align: center; /* Metni ortala */
+    border: 2px solid #f1f1f1;
+    margin-top: 100px;
+}
+
+.noel-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noel-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.noel-div h2 {
+    font-weight: bold;
+}
+.noel-div p {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff000096;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #ee0000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: 3px solid #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.box p {
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #800000;
+}
+
+.box .btn {
+    background-color: #c60000;
+    font-weight: bold;
+}
+
+.box .btn:hover {
+    background-color: #ff0000;
+}
+
+.play {
+    background-image: url('./images/kedy.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi kapsayacak şekilde ölçeklendir */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
+    height: 100vh; /* Tüm ekran yüksekliğinde görünüm */
+    display: flex; /* İçeriği ortalamak için */
+    flex-direction: column; /* İçerikleri dikeyde sıralamak için */
+    justify-content: center; /* İçeriği dikeyde ortala */
+    align-items: center; /* İçeriği yatayda ortala */
+    color: white; /* Metin rengini beyaz yap */
+    text-align: center; /* Metni ortala */
+    border: 2px solid #f1f1f1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.play-div h2 {
+    padding-bottom: 30px;
+}
+
+.play-div p {
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.play-div .play-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {

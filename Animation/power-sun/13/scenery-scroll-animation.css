@@ -1,0 +1,102 @@
+body,
+html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+svg {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    cursor: pointer;
+  }
+  
+::-webkit-scrollbar-track {
+    background: rgb(74, 74, 74);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 205, 246);
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+
+.scrollElement {
+      position: absolute;
+      height: 6000px;
+      width: 100px;
+      top: 0;
+      z-index: 0;
+}
+
+  .btn {
+      position: fixed;
+      bottom: 5%;
+      right: 0px;
+      transform: translateX(-50%);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7em;
+      background-color: transparent;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      transition: all .3s;
+      z-index: 11;
+  }
+
+  .btn_works {
+      left: 100px;
+      right: unset;
+      text-decoration: none;
+  }
+
+  .btn:hover {
+      background: #ffffff;
+      color: #1B1734;
+  }
+
+  .premm {
+    position: fixed;
+      top: 1%; /* Ekranın üst kısmına yakın bir yere sabitler */
+      left: 50%; /* Yatayda tam ortalar */
+      transform: translateX(-50%); /* Yatay eksende tam ortalamak için */
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: smaller;
+      font-weight: bold;
+  }
+
+  .power {
+      position: fixed;
+      bottom: 1%; /* Ekranın alt kısmına sabit */
+      left: 50%; /* Yatayda tam ortalar */
+      transform: translateX(-50%); /* Yatay eksende ortalamak için */
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: smaller;
+      font-weight: bold;
+  }
+
+  .power-span {
+    color: green;
+    font-size: 700;
+  }
